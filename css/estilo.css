@@ -1043,7 +1043,7 @@ div iframe {
   }
 }
 /* GALERÍA */
-@media (min-width: 992px) and (max-width: 1625px) {
+@media (min-width: 992px) and (max-width: 1632px) {
   .galeriaContenedorPadre {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
