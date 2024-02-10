@@ -693,7 +693,7 @@ textarea:focus {
   grid-row-start: span 1;
 }
 .galeriaContenedorInterno:nth-child(3) {
-  grid-column-start: span 2;
+  grid-column-start: span 1;
 }
 .galeriaContenedorInterno:nth-child(6) {
   grid-row-start: span 1;
