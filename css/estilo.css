@@ -67,6 +67,7 @@ nav a {
 nav a:hover {
   font-size: 20px;
   color: #fff;
+  transition: all 0.3s;
 }
 
 .nav-link {
@@ -1043,7 +1044,7 @@ div iframe {
   }
 }
 /* GALERÍA */
-@media (min-width: 992px) and (max-width: 1632px) {
+@media (min-width: 992px) and (max-width: 1700px) {
   .galeriaContenedorPadre {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
