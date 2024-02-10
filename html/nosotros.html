@@ -11,7 +11,7 @@
 
     <title>Nosotros - TR VIAL</title>
     <!-- Favicon -->
-    <link rel="shortcut icon" href="../img/truck.png.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../img/logo.png.png" type="image/x-icon">
 
     <!-- CSS BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -27,25 +27,31 @@
 <body class="nosotros">
 
     <!-- HEADER -->
-    <header class="navbar navbar-expand-lg">
-        <div class="container-fluid">
+    <header class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid headerDiv">
             <a class="navbar-brand" href="../index.html">
-                <img src="../img/logo.png.jpeg" alt="Logo de TR VIAL" class="logo">
+                <img src="../img/logo.png.png" alt="Logo de TR VIAL" class="logo">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
-            <nav class="collapse navbar-collapse" id="navbarNav">
+            <nav class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <ul class="navbar-nav">
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="./nosotros.html">Nosotros</a></li>
-                    <li><a href="./servicios.html">Servicios</a></li>
-                    <li><a href="./galeria.html">Galería</a></li>
-                    <li><a href="./contacto.html">Contacto</a></li>
+                    <li><a class="nav-link" href="../index.html">Home</a></li>
+                    <li><a class="nav-link" href="./nosotros.html">Nosotros</a></li>
+                    <li><a class="nav-link" href="./servicios.html">Servicios</a></li>
+                    <li><a class="nav-link" href="./galeria.html">Galería</a></li>
+                    <li><a class="nav-link" href="./contacto.html">Contacto</a></li>
                 </ul>
             </nav>
+        </div>
+        <div class="homeH d-flex flex-column justify-content-center align-items-center">
+            <h1 class="homeHUno">Empresa dedicada al <br> servicio de la construcción</h1>
+            <div class="lineaDivisoria"></div>
+            <h2 class="homeHDos">Nos especializamos en movimientos de suelo, demoliciones, excavaciones y servicio de
+                contenedores</h2>
+            <a href="./html/contacto.html" class="botonHeader">Solicitar cotización</a>
         </div>
     </header>
 
@@ -95,39 +101,40 @@
 
 
         <!-- SECCIÓN DE FORMULARIO -->
-        <div data-aos="fade-up">
+        <div>
             <section class="fondoForm">
                 <div class="contenedorUno">
-                    <div class="contenedorP">
-                        <h4>CONTACTANOS</h4>
+                    <div data-aos="fade-right" class="contenedorP">
+                        <p>CONTACTANOS</p>
                     </div>
-                    <div class="contenedorR">
-                        <p class="parrafoUno">Solicite nuestros</p>
+                    <div data-aos="fade-left" class="contenedorR">
+                        <p class="parrafoUno">Solicitá nuestros</p>
                         <p class="parrafoUno">productos o</p>
                         <p class="parrafoUno">servicios</p>
                     </div>
-                    <div class="contenedorT">
-                        <p class="parrafoDos">Déjenos sus datos y lo</p>
+                    <div data-aos="fade-right" class="contenedorT">
+                        <p class="parrafoDos">Dejanos tus datos y te</p>
                         <p class="parrafoDos">contactaremos a la brevedad</p>
                     </div>
                 </div>
 
                 <div class="contenedorDos">
-                    <form>
+                    <form data-aos="fade-up">
                         <label for="nombre"></label>
-                        <input type="text" id="nombre" placeholder="Nombre y Apellido">
+                        <input type="text" id="nombre" placeholder="Nombre y Apellido" data-aos="fade-up">
 
                         <label for="email"></label>
-                        <input type="email" id="email" placeholder="Correo electrónico">
+                        <input type="email" id="email" placeholder="Correo electrónico" data-aos="fade-up">
 
                         <label for="telefono"></label>
-                        <input type="text" id="telefono" placeholder="Teléfono">
+                        <input type="text" id="telefono" placeholder="Teléfono" data-aos="fade-up">
 
                         <label for="consulta"></label>
-                        <textarea id="consulta" cols="30" rows="10" placeholder="Escriba su consulta"></textarea>
+                        <textarea id="consulta" cols="30" rows="10" placeholder="Escriba su consulta"
+                            data-aos="fade-up"></textarea>
 
-                        <input type="submit" class="btnFormulario">
-                        <input type="reset" class="btnFormulario">
+                        <input type="submit" class="btnFormulario" data-aos="fade-down">
+                        <input type="reset" class="btnFormulario" data-aos="fade-down">
                     </form>
                 </div>
             </section>
@@ -143,50 +150,65 @@
     </main>
 
     <!-- FOOTER -->
-    <footer data-aos="zoom-in">
-        <div class="contenedorFooter">
-            <p><span>NUESTROS DATOS</span></p>
-        </div>
-        <div class="contenedorFooterDatos">
-            <div class="contenedorFooterUno">
-                <ul class="eliminoViñetas">
-                    <li class="trVialWeight">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-truck" viewBox="0 0 16 16">
-                            <path
-                                d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5zm1.294 7.456A2 2 0 0 1 4.732 11h5.536a2 2 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456M12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2" />
-                        </svg> TR VIAL
-                    </li>
-                    <li>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
-                            <path
-                                d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
-                        </svg> Zona Oeste, Buenos Aires, Argentina
-                    </li>
+    <footer>
 
-                </ul>
+        <div class="contenedorFooter">
+            <div class="contenedorFooterDatos">
+                <div class="nuestrosDatos">
+                    <p><span class="spanDos">NUESTROS DATOS</span></p>
+                </div>
+                <div class="contenedorFooterUno">
+                    <ul class="eliminoViñetas">
+                        <li class="trVialWeight">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-truck" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5zm1.294 7.456A2 2 0 0 1 4.732 11h5.536a2 2 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456M12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2" />
+                            </svg> TR VIAL
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
+                            </svg> Zona Oeste, Buenos Aires, Argentina
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+                            </svg> 11-2390-1600
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z" />
+                            </svg> <a class="aLink" href="../html/contacto.html">trvial@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="contenedorFooterDos">
-                <ul class="eliminoViñetas">
-                    <li>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-telephone-fill" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd"
-                                d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
-                        </svg> 11-2390-1600
-                    </li>
-                    <li>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-envelope-fill" viewBox="0 0 16 16">
-                            <path
-                                d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z" />
-                        </svg> <a class="aLink" href="#">trvial@gmail.com</a>
-                    </li>
-                </ul>
+
+            <div class="contenedorFooterMenu">
+                <div class="menuNav">
+                    <p><span class="spanDos">MENÚ</span></p>
+                </div>
+                <div class="contenedorFooterDos">
+                    <ul class="eliminoViñetas">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="./nosotros.html">Nosotros</a></li>
+                        <li><a href="./servicios.html">Servicios</a></li>
+                        <li><a href="./galeria.html">Galería</a></li>
+                        <li><a href="./contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
+
         <div class="contenedorFooterPie">
+            <hr class="hrDos">
             <p>Copyright 2024. Todos los derechos reservados.</p>
         </div>
     </footer>

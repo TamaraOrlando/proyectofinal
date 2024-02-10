@@ -20,25 +20,26 @@
 }
 
 .contenedorP {
+    font-family: $fuente-montserrat;
     color: $color-secundario;
-    font-size: $fuente-texto;
-    font-weight: $fuente-negrita;
+    font-size: 21px;
     text-align: left;
-    top: 20px;
+    padding-bottom: 0px;
 }
 
 .contenedorR {
+    font-family: $fuente-vollkorn;
     color: $color-secundario;
     font-size: 42px;
     text-align: $texto-centrado;
-    top: 95px;
+    margin-top: 0px;
 }
 
 .contenedorT {
+    font-family: $fuente-montserrat;
     color: $color-secundario;
     font-size: $fuente-pequeña;
     text-align: $texto-centrado;
-    top: 300px;
 }
 
 .parrafoUno,
@@ -51,6 +52,7 @@
 /* FORMULARIO */
 
 form {
+    font-family: $fuente-montserrat;
     max-width: 500px;
     width: $ancho-principal;
     height: 100%;
@@ -98,7 +100,8 @@ textarea {
 }
 
 .btnFormulario {
-    background: linear-gradient(to bottom right, #8d9ac7, #24448A);
+    font-family: $fuente-montserrat;
+    background: linear-gradient(to bottom right, #8d9ac7, rgba(59, 89, 142, 0.696), #24448a);
     color: $color-secundario;
     padding: 8px 13px;
     border: none;

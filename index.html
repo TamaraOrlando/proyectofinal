@@ -12,7 +12,7 @@
 
     <title>TR VIAL</title>
     <!-- Favicon -->
-    <link rel="shortcut icon" href="/img/truck.png.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/img/logo.png.png" type="image/x-icon">
 
     <!-- CSS BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -28,136 +28,234 @@
 <body class="index">
 
     <!-- HEADER -->
-    <header class="navbar navbar-expand-lg">
-        <div class="container-fluid">
+    <header class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid headerDiv">
             <a class="navbar-brand" href="index.html">
-                <img src="img/logo.png.jpeg" alt="Logo de TR VIAL" class="logo">
+                <img src="img/logo.png.png" alt="Logo de TR VIAL" class="logo">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
-            <nav class="collapse navbar-collapse" id="navbarNav">
+            <nav class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <ul class="navbar-nav">
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./html/nosotros.html">Nosotros</a></li>
-                    <li><a href="./html/servicios.html">Servicios</a></li>
-                    <li><a href="./html/galeria.html">Galería</a></li>
-                    <li><a href="./html/contacto.html">Contacto</a></li>
+                    <li><a class="nav-link" href="./index.html">Home</a></li>
+                    <li><a class="nav-link" href="./html/nosotros.html">Nosotros</a></li>
+                    <li><a class="nav-link" href="./html/servicios.html">Servicios</a></li>
+                    <li><a class="nav-link" href="./html/galeria.html">Galería</a></li>
+                    <li><a class="nav-link" href="./html/contacto.html">Contacto</a></li>
                 </ul>
             </nav>
         </div>
+        <div class="homeH d-flex flex-column justify-content-center align-items-center">
+            <h1 class="homeHUno">Empresa dedicada al <br> servicio de la construcción</h1>
+            <div class="lineaDivisoria"></div>
+            <h2 class="homeHDos">Nos especializamos en movimientos de suelo, demoliciones, excavaciones y servicio de
+                contenedores</h2>
+            <a href="./html/contacto.html" class="botonHeader">Solicitar cotización</a>
+        </div>
     </header>
+
+
 
     <!-- MAIN -->
     <main>
         <!-- SECCIÓN DE HOME -->
-        <section id="carouselExampleIndicators" class="carousel slide">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="img/otrofondo.png.jpeg" class="d-block w-100 img-fluid object-fit-cover"
-                        alt="Foto de Home">
-                </div>
-                <div class="carousel-item">
-                    <img src="img/volquetes.png.jpeg" class="d-block w-100 img-fluid object-fit-cover"
-                        alt="Foto de Volquetes">
-                </div>
-                <div class="carousel-item">
-                    <img src="img/fondo.png.jpeg" class="d-block w-100 img-fluid object-fit-cover" alt="Foto de camion">
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Siguiente</span>
-            </button>
-        </section>
-
-        <div class="homeH">
-            <h1 class="homeHUno">TR VIAL</h1>
-            <h2 class="homeHDos">Al servicio de la construcción</h2>
-        </div>
-
-        <!-- SEGUNDA SECCIÓN DE HOME -->
         <div data-aos="fade-up">
-            <section class="segundaSection">
+            <section class="sectionHome">
                 <h3 class="homeHTres">¿Quiénes somos?</h3>
                 <p class="homeP">
-                    ¡Bienvenidos a TR VIAL!
-
-                    Desde 1989, somos una empresa familiar especializada en construcción en la zona Oeste y alrededores.
-                    Nos
-                    destacamos en movimientos de suelo, podas, servicios de volquetes, piletas, demoliciones, venta de
-                    tierra y
-                    parquizaciones. En TR VIAL, transformamos tus proyectos en realidad con décadas de experiencia y un
-                    compromiso inquebrantable
-                    con la calidad. Descubre cómo hacemos la diferencia en cada espacio. ¡Te damos la bienvenida a la
-                    excelencia
-                    en
-                    construcción!</p>
-            </section>
-
-            <!-- LÍNEA DIVISORIA -->
-            <div class="lineaDivisoria"></div>
-        </div>
-        <!-- SECCIÓN VIDEO IFRAME -->
-        <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
-            <section class="videoContenedorIFrame">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/KUJtOHIYlUw?si=FZMMAgOQh9vCeNqF"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen></iframe>
+                    ¡Bienvenidos a TR VIAL! Desde 1989, somos una empresa familiar especializada en construcción en la
+                    zona Oeste y alrededores.
+                    Nos destacamos en movimientos de suelo, podas, servicios de volquetes, piletas, demoliciones, venta
+                    de tierra y parquizaciones. En TR VIAL, transformamos tus proyectos en realidad con décadas de
+                    experiencia y un compromiso inquebrantable con la calidad. Descubre cómo hacemos la diferencia en
+                    cada espacio. ¡Te damos la bienvenida a la excelencia en construcción!</p>
             </section>
         </div>
+
+        <!-- SECCIÓN DE CARRUSEL DE SERVICIOS -->
+        <section class="container-fluid sectionCarrusel">
+            <div class="d-flex flex-column justify-content-center align-items-center">
+                <p class="sectionServiciosHome"><span>SERVICIOS</span></p>
+                <p class="sectionServiciosHomeDos">Todo lo que podemos ofrecerte</p>
+                <hr class="hrUno">
+            </div>
+            <div class="d-flex justify-content-center divCarrusel">
+                <div id="carouselExampleCaptions" class="carousel slide" style="width: 60rem;">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                            aria-label="Slide 5"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"
+                            aria-label="Slide 6"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6"
+                            aria-label="Slide 7"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/pozo.png.jpeg"
+                                class="d-block w-100 img-fluid object-fit-cover imagenCarruselServ"
+                                alt="Imagen de excavación">
+                            <div class="carousel-caption d-md-block">
+                                <p class="fuenteCarrusel">Excavaciones</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/platea.png.jpeg"
+                                class="d-block w-100 img-fluid object-fit-cover imagenCarruselServ"
+                                alt="Imagen de platea">
+                            <div class="carousel-caption d-md-block">
+                                <p class="fuenteCarrusel">Plateas</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/escombro.png.jpeg"
+                                class="d-block w-100 img-fluid object-fit-cover imagenCarruselServ"
+                                alt="Imagen de demolición">
+                            <div class="carousel-caption d-md-block">
+                                <p class="fuenteCarrusel">Demoliciones</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/volquetes.png.jpeg"
+                                class="d-block w-100 img-fluid object-fit-cover imagenCarruselServ"
+                                alt="Imagen de volquetes">
+                            <div class="carousel-caption d-md-block">
+                                <p class="fuenteCarrusel">Alquiler de volquetes</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/poda.png.jpeg"
+                                class="d-block w-100 img-fluid object-fit-cover imagenCarruselServ"
+                                alt="Imagen de poda">
+                            <div class="carousel-caption d-md-block">
+                                <p class="fuenteCarrusel">Podas</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/tierra.png.jpeg"
+                                class="d-block w-100 img-fluid object-fit-cover imagenCarruselServ"
+                                alt="Imagen de tierra">
+                            <div class="carousel-caption d-md-block">
+                                <p class="fuenteCarrusel">Venta de tierra</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/retro.png.jpeg"
+                                class="d-block w-100 img-fluid object-fit-cover imagenCarruselServ"
+                                alt="Imagen de maquinaria vial">
+                            <div class="carousel-caption d-md-block">
+                                <p class="fuenteCarrusel">Alquiler de maquinaria vial</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center">
+                <a href="./html/servicios.html"
+                    class="botonCarrusel d-flex flex-row justify-content-center align-items-center">Ver más información
+                    <p class="flechaAnimada"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+                            fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z" />
+                        </svg></p>
+                </a>
+            </div>
+        </section>
+
+
+        <!-- SECCIÓN DE GALERÍA -->
+        <div data-aos="fade-up" class="divGaleriaHome">
+            <p class="sectionGaleriaTitulo"><span>GALERÍA</span></p>
+
+            <section class="galeriaContenedorPadre">
+                <div data-aos="flip-left" class="galeriaContenedorInterno">
+                    <img class="imagenContenedor" src="./img/pileta.png.jpeg" alt="Foto de pileta">
+                </div>
+                <div data-aos="flip-left" class="galeriaContenedorInterno">
+                    <img class="imagenContenedor" src="./img/movisuelo.png.jpeg" alt="Foto de movimiento de suelo">
+                </div>
+                <div data-aos="flip-left" class="galeriaContenedorInterno">
+                    <img class="imagenContenedor" src="./img/estacionamiento.png.jpeg" alt="Foto de estacionamiento">
+                </div>
+                <div data-aos="flip-left" class="galeriaContenedorInterno">
+                    <img class="imagenContenedor" src="./img/camionvol.png.jpeg" alt="Foto de camion volquetero">
+                </div>
+                <div data-aos="flip-left" class="galeriaContenedorInterno">
+                    <img class="imagenContenedor" src="./img/sotano.png.jpeg" alt="Foto de sotano">
+                </div>
+                <div data-aos="flip-left" class="galeriaContenedorInterno">
+                    <img class="imagenContenedor" src="./img/fondo.png.jpeg" alt="Foto de camion volquetes">
+                </div>
+                <div data-aos="flip-left" class="galeriaContenedorInterno">
+                    <img class="imagenContenedor" src="./img/terreno.png.jpeg" alt="Foto de terreno">
+                </div>
+                <div data-aos="flip-left" class="galeriaContenedorInterno">
+                    <img class="imagenContenedor" src="./img/volquetes.png.jpeg" alt="Foto de volquetes">
+                </div>
+                <div data-aos="flip-left" class="galeriaContenedorInterno">
+                    <img class="imagenContenedor" src="./img/movimsuelo.png.jpeg" alt="Foto de camion">
+                </div>
+                <div data-aos="flip-left" class="galeriaContenedorInterno">
+                    <img class="imagenContenedor" src="./img/otrofondo.png.jpeg" alt="Foto de camiones">
+                </div>
+            </section>
+        </div>
+
 
         <!-- SECCIÓN DE FORMULARIO -->
-        <div data-aos="fade-up">
+        <div>
             <section class="fondoForm">
                 <div class="contenedorUno">
-                    <div class="contenedorP">
-                        <h4>CONTACTANOS</h4>
+                    <div data-aos="fade-right" class="contenedorP">
+                        <p>CONTACTANOS</p>
                     </div>
-                    <div class="contenedorR">
-                        <p class="parrafoUno">Solicite nuestros</p>
+                    <div data-aos="fade-left" class="contenedorR">
+                        <p class="parrafoUno">Solicitá nuestros</p>
                         <p class="parrafoUno">productos o</p>
                         <p class="parrafoUno">servicios</p>
                     </div>
-                    <div class="contenedorT">
-                        <p class="parrafoDos">Déjenos sus datos y lo</p>
+                    <div data-aos="fade-right" class="contenedorT">
+                        <p class="parrafoDos">Dejanos tus datos y te</p>
                         <p class="parrafoDos">contactaremos a la brevedad</p>
                     </div>
                 </div>
 
                 <div class="contenedorDos">
-                    <form>
+                    <form data-aos="fade-up">
                         <label for="nombre"></label>
-                        <input type="text" id="nombre" placeholder="Nombre y Apellido">
+                        <input type="text" id="nombre" placeholder="Nombre y Apellido" data-aos="fade-up">
 
                         <label for="email"></label>
-                        <input type="email" id="email" placeholder="Correo electrónico">
+                        <input type="email" id="email" placeholder="Correo electrónico" data-aos="fade-up">
 
                         <label for="telefono"></label>
-                        <input type="text" id="telefono" placeholder="Teléfono">
+                        <input type="text" id="telefono" placeholder="Teléfono" data-aos="fade-up">
 
                         <label for="consulta"></label>
-                        <textarea id="consulta" cols="30" rows="10" placeholder="Escriba su consulta"></textarea>
+                        <textarea id="consulta" cols="30" rows="10" placeholder="Escriba su consulta"
+                            data-aos="fade-up"></textarea>
 
-                        <input type="submit" class="btnFormulario">
-                        <input type="reset" class="btnFormulario">
+                        <input type="submit" class="btnFormulario" data-aos="fade-down">
+                        <input type="reset" class="btnFormulario" data-aos="fade-down">
                     </form>
                 </div>
             </section>
@@ -172,50 +270,65 @@
     </main>
 
     <!-- FOOTER -->
-    <footer data-aos="zoom-in">
-        <div class="contenedorFooter">
-            <p><span>NUESTROS DATOS</span></p>
-        </div>
-        <div class="contenedorFooterDatos">
-            <div class="contenedorFooterUno">
-                <ul class="eliminoViñetas">
-                    <li class="trVialWeight">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-truck" viewBox="0 0 16 16">
-                            <path
-                                d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5zm1.294 7.456A2 2 0 0 1 4.732 11h5.536a2 2 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456M12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2" />
-                        </svg> TR VIAL
-                    </li>
-                    <li>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
-                            <path
-                                d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
-                        </svg> Zona Oeste, Buenos Aires, Argentina
-                    </li>
+    <footer>
 
-                </ul>
+        <div class="contenedorFooter">
+            <div class="contenedorFooterDatos">
+                <div class="nuestrosDatos">
+                    <p><span class="spanDos">NUESTROS DATOS</span></p>
+                </div>
+                <div class="contenedorFooterUno">
+                    <ul class="eliminoViñetas">
+                        <li class="trVialWeight">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-truck" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5zm1.294 7.456A2 2 0 0 1 4.732 11h5.536a2 2 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456M12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2" />
+                            </svg> TR VIAL
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
+                            </svg> Zona Oeste, Buenos Aires, Argentina
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+                            </svg> 11-2390-1600
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z" />
+                            </svg> <a class="aLink" href="../html/contacto.html">trvial@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="contenedorFooterDos">
-                <ul class="eliminoViñetas">
-                    <li>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-telephone-fill" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd"
-                                d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
-                        </svg> 11-2390-1600
-                    </li>
-                    <li>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-envelope-fill" viewBox="0 0 16 16">
-                            <path
-                                d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z" />
-                        </svg> <a class="aLink" href="#">trvial@gmail.com</a>
-                    </li>
-                </ul>
+
+            <div class="contenedorFooterMenu">
+                <div class="menuNav">
+                    <p><span class="spanDos">MENÚ</span></p>
+                </div>
+                <div class="contenedorFooterDos">
+                    <ul class="eliminoViñetas">
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./html/nosotros.html">Nosotros</a></li>
+                        <li><a href="./html/servicios.html">Servicios</a></li>
+                        <li><a href="./html/galeria.html">Galería</a></li>
+                        <li><a href="./html/contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
+
         <div class="contenedorFooterPie">
+            <hr class="hrDos">
             <p>Copyright 2024. Todos los derechos reservados.</p>
         </div>
     </footer>

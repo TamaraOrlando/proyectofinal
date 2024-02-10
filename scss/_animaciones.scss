@@ -1,0 +1,11 @@
+/* ANIMACIONES CON KEYFRAMES */
+
+@keyframes moverDerecha {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(30px);
+  }
+}

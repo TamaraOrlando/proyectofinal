@@ -12,6 +12,7 @@
     @include flexRow;
     @include margin;
     padding-top: 100px;
+    padding-bottom: 80px;
 }
 
 .contactoContenedorUno {
@@ -43,10 +44,4 @@ div iframe {
     width: $ancho-principal;
     max-width: 700px;
     height: 500px;
-}
-
-.lineaDivisoriaDos {
-    @include lineaDivisoria;
-    margin-top: 50px;
-    margin-bottom: 10px;
 }

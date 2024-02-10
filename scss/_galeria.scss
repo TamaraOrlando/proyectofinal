@@ -13,9 +13,11 @@
     height: 100%;
     object-fit: cover;
     filter: brightness(0.8);
+    transition: $transicion;
 
     &:hover {
         filter: brightness(1);
+        transform: scale(1.01);
     }
 }
 
@@ -25,16 +27,17 @@
     grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
     @include paddingConParametros(150px, 150px);
     padding-bottom: 150px;
-    gap: 1px;
 }
 
 .galeriaContenedorInterno {
+    padding: 1px;
+
     &:nth-child(1) {
-        grid-row-start: span 2;
+        grid-row-start: span 1;
     }
 
     &:nth-child(3) {
-        grid-column-start: span 2;
+        grid-column-start: span 1;
     }
 
     &:nth-child(6) {
@@ -42,6 +45,10 @@
     }
 
     &:nth-child(8) {
+        grid-row-start: span 1;
+    }
+
+    &:nth-child(9) {
         grid-column-start: span 2;
     }
 }

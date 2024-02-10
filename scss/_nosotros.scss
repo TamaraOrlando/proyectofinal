@@ -4,10 +4,11 @@
     @include flexRow;
     @include margin;
     justify-content: space-evenly;
+    padding-bottom: 70px;
 }
 
 .nosotrosContenedorUno {
-    width: 80%;
+    width: $ancho-principal;
     color: $color-principal;
 }
 
@@ -17,23 +18,24 @@
 }
 
 .nosotrosP {
+    font-family: $fuente-montserrat;
     font-size: 20px;
     padding-top: $padding-arriba;
     padding-bottom: 80px;
 }
 
 .nosotrosContenedorDos {
-    width: 80%;
+    width: $ancho-principal;
     display: flex;
-    justify-content: end;
+    justify-content: center;
     align-items: center;
     padding-top: $padding-arriba;
-    margin-right: 70px;
 }
 
 .fotoCamionViejo {
-    width: 55%;
+    object-fit: cover;
+    width: 60%;
     height: 630px;
     border-radius: 10px;
-    border: $color-principal solid 1px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.6);
 }

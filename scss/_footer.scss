@@ -2,31 +2,35 @@
 
 footer {
     display: grid;
-    grid-template-rows: 1fr 1fr 0.5fr;
+    grid-template-rows: 240px 200px;
+    font-family: $fuente-montserrat;
+    color: $color-principal;
+    background: linear-gradient(to bottom right, #f5f6f7, rgba(59, 89, 142, 0.901));
 }
 
 .contenedorFooter {
-    color: $color-principal;
-    font-size: $fuente-texto;
-    font-weight: $fuente-negrita;
-    text-align: left;
-    align-self: end;
-    padding-top: 50px;
-    padding-bottom: 7px;
-    margin-left: 150px;
-}
-
-.contenedorFooterDatos {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    color: $color-principal;
-    font-size: 19px;
-    align-self: end;
+    padding-left: 300px;
+    padding-top: 60px;
 }
+
+.nuestrosDatos {
+    font-size: 19px;
+    font-weight: 500;
+    text-align: left;
+    display: grid;
+    align-items: start;
+    padding-top: 60px;
+    padding-left: 80px;
+}
+
 
 .contenedorFooterUno {
     text-align: left;
-    padding-left: 120px;
+    padding-left: 50px;
+    padding-top: 50px;
+    font-size: 17px;
 }
 
 .trVialWeight {
@@ -35,21 +39,54 @@ footer {
 
 .contenedorFooterDos {
     text-align: left;
+    padding-top: 40px;
+    font-size: 17px;
+
+
+
+    ul {
+        list-style-type: none;
+    }
+
+    a {
+        color: $color-principal;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: none;
+        font-size: 17px;
+        transition: $transicion;
+
+        &:hover {
+            color: $color-secundario;
+            font-size: 20px;
+        }
+    }
+}
+
+.menuNav {
+    font-size: 19px;
+    font-weight: 500;
+    text-align: left;
+    padding-top: 60px;
+    padding-left: 30px;
 }
 
 .contenedorFooterPie {
-    color: $color-principal;
-    font-size: 15px;
+    font-size: 16px;
     text-align: $texto-centrado;
     align-self: end;
-    padding-top: $padding-arriba;
+    color: #f5f6f769;
+}
+
+.hrDos {
+    color: $color-principal;
 }
 
 .eliminoViñetas {
     list-style-type: none;
 }
 
-p span {
+.spanDos {
     position: relative;
 
     &::before {

@@ -1,14 +1,28 @@
 /* ENCABEZADO */
 
 header {
-    background-color: $color-principal;
-    width: $ancho-principal;
-    position: fixed;
+    background: linear-gradient(rgba(3, 7, 19, 0.729), rgba(3, 3, 3, 0.439)), url(../img/otrofondo.png.jpeg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 75vh;
+    display: flex;
+    align-items: start;
+    position: relative;
 }
 
+
+
+.headerDiv {
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+}
+
+
 .logo {
-    width: 80px;
-    max-height: 150px;
+    width: 90px;
+    max-height: 170px;
     margin-left: 150px;
 }
 
@@ -29,12 +43,87 @@ nav {
     a {
         @include ancla;
         font-weight: none;
+        font-family: $fuente-montserrat;
         font-size: $fuente-pequeña;
         transition: $transicion;
+        color: $color-secundario;
 
         &:hover {
-            color: $color-secundario;
             font-size: 20px;
+            color: $color-secundario;
         }
+    }
+}
+
+.nav-link {
+    color: $color-secundario;
+
+    &:hover {
+        font-size: 20px;
+        color: $color-secundario;
+    }
+}
+
+
+.navbar-toggler-icon {
+    background-image: url(../img/menuhambu.png.png);
+}
+
+
+#navbarNavAltMarkup {
+    width: 100%;
+}
+
+
+/* TÍTULOS DEL HEADER */
+
+.homeH {
+    width: $ancho-principal;
+}
+
+.homeHUno {
+    font-family: $fuente-vollkorn;
+    text-transform: uppercase;
+    line-height: 1.6;
+    font-weight: 500;
+    font-size: 40px;
+    color: $color-secundario;
+    text-align: $texto-centrado;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.lineaDivisoria {
+    border-radius: 50px;
+    border: rgba(59, 89, 142, 0.696) solid 3px;
+    width: 80px;
+    padding-bottom: 0;
+    margin-bottom: 100px;
+}
+
+.homeHDos {
+    padding-top: 0;
+    font-family: $fuente-montserrat;
+    text-align: $texto-centrado;
+    color: $color-secundario;
+    font-size: $fuente-texto;
+    margin-bottom: 60px;
+}
+
+.botonHeader {
+    @include ancla;
+    font-family: $fuente-montserrat;
+    text-align: $texto-centrado;
+    font-weight: 500;
+    font-size: 20px;
+    padding: 16px 19px;
+    border-radius: 150px;
+    border: rgba(59, 89, 142, 0.698) solid 3px;
+    transition: 0.5s;
+
+
+    &:hover {
+        background: linear-gradient(to top left, #8d9ac7, #24448A, );
+        border: none;
     }
 }
